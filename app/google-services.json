@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "32147094039",
+    "project_id": "infostack-f65d5",
+    "storage_bucket": "infostack-f65d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32147094039:android:e0c63311c9286be96efa52",
+        "android_client_info": {
+          "package_name": "com.example.infostack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32147094039-8t0jhoicgddm68fqboafqj3sth81dab3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt7VubINeXvv7ledqvz3zhUJ0FweYrqOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32147094039-8t0jhoicgddm68fqboafqj3sth81dab3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

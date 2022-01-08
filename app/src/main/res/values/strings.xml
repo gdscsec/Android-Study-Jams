@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Infostack</string>
+
+    <string-array name="Spinner_items">
+        <item>YEAR</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+    </string-array>
+
+    <string-array name="deptarment">
+        <item>DEPT</item>
+        <item>CSE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <item>CIVIL</item>
+        <item>EEE</item>
+        <item>ICE</item>
+        <item>AIDS</item>
+        <item>CSBS</item>
+    </string-array>
+
+    <string-array name="board">
+        <item>BOARD</item>
+        <item>STATE</item>
+        <item>CBSE</item>
+        <item>ICSE</item>
+        <item>NRI</item>
+        <item>ISE</item>
+    </string-array>
+
+    <string-array name="blood_grp">
+        <item>BLOOD GROUP</item>
+        <item>A+</item>
+        <item>O+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>O-</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>A1-</item>
+    </string-array>
+
+    <string-array name="sem_college">
+        <item>CURRENT SEM</item>
+        <item>I SEM</item>
+        <item>II SEM</item>
+        <item>III SEM</item>
+        <item>IV SEM</item>
+        <item>V SEM</item>
+        <item>VI SEM</item>
+        <item>VII SEM</item>
+        <item>VIII SEM</item>
+    </string-array>
+
+
+    <string name="header"><u> STUDENT INFO </u></string>
+
+</resources>

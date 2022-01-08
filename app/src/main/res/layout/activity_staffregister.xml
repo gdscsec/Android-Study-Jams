@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2F3C"
+    tools:context=".staffregister">
+
+    <ImageView
+        android:id="@+id/back_arrow_staff_reg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backarw"
+        android:rotation="-180"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/sign_up_txt_staff_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Sign Up"
+        android:layout_below="@+id/back_arrow_staff_reg"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/pls_fill"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/sign_up_txt_staff_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill the details here"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="17sp"
+        android:textColor="#808088"
+        android:layout_marginLeft="20dp"
+        android:textStyle="normal"
+        />
+
+
+    <EditText
+        android:id="@+id/name_staff_reg"
+        android:layout_marginTop="20dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pls_fill"
+        android:hint="Staff Name"
+        android:background="@drawable/input_field_bg"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:id="@+id/mail_id_staff_reg"
+        android:layout_marginTop="20dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/name_staff_reg"
+        android:hint="Email Id"
+        android:background="@drawable/input_field_bg"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/college_staff_reg"
+        android:layout_marginTop="20dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mail_id_staff_reg"
+        android:hint="College Name"
+        android:background="@drawable/input_field_bg"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_baseline_school_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/dept_staff_reg"
+        android:layout_marginTop="20dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/college_staff_reg"
+        android:hint="Department"
+        android:background="@drawable/input_field_bg"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_baseline_business_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dummy_reg"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dept_staff_reg"
+        android:textColorHint="@color/white"
+        app:passwordToggleDrawable="@drawable/icon_selector"
+        android:hint="       "
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_staff_reg"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/user_id_edit_txt_std"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:background="@drawable/input_field_bg"
+            android:drawablePadding="5dp"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_baseline_lock_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dummy1_reg"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dummy_reg"
+        android:textColorHint="@color/white"
+        app:passwordToggleDrawable="@drawable/icon_selector"
+        android:hint="       "
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_password_staff_reg"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/user_id_edit_txt_std"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:background="@drawable/input_field_bg"
+            android:drawablePadding="5dp"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_baseline_lock_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/register_btn_staff"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/dummy1_reg"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        android:paddingLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="15dp"
+        android:textSize="18sp"
+        android:background="@drawable/login_btn_bg"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+
+
+
+
+
+</RelativeLayout>

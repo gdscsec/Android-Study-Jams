@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2F3C"
+    tools:context=".staffdashboard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="25sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/header"
+                android:textColor="@color/white"
+                />
+            <ImageView
+                android:id="@+id/logout_staff_dashboard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/logout"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/text_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/profile"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="PROFILE"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+
+
+        <EditText
+            android:id="@+id/student_name_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Student Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            />
+
+        <EditText
+            android:id="@+id/student_id_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Student ID"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_account_box_24"
+            android:drawableTint="@color/white"
+            android:drawableTintMode="src_atop"
+            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+            />
+
+
+        <EditText
+            android:id="@+id/student_regno_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Reg Number"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_edit_note_24"
+            android:drawableLeft="@drawable/ic_baseline_edit_note_24"
+            />
+
+        <EditText
+            android:id="@+id/student_phno_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Phone Number"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            />
+
+        <EditText
+            android:id="@+id/student_mail_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Mail ID"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            />
+
+
+
+        <LinearLayout
+
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/blood_grp_std"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/text1_bg"
+                android:drawablePadding="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dob_std"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/text1_bg"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="DOB"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/text_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/student_edu"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="EDUCATION"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="20dp"
+            android:text="B.E / B.Tech"
+            android:layout_gravity="start"
+            />
+
+
+        <EditText
+            android:id="@+id/student_clgname_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="College Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_school_24"
+            android:drawableLeft="@drawable/ic_baseline_school_24"
+            />
+
+        <EditText
+            android:id="@+id/student_dept_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Department"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_business_24"
+            android:drawableLeft="@drawable/ic_baseline_business_24"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/year_std_college"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/text1_bg"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/sem_college"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="gravity"
+                android:background="@drawable/text1_bg"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+
+            android:id="@+id/cgpa"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="CGPA"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/percent_studt"
+            android:drawableLeft="@drawable/percent_studt"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="20dp"
+            android:text="HSC"
+            android:layout_gravity="start"
+            />
+
+
+        <EditText
+            android:id="@+id/student_schoolname_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="School Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_menu_book_24"
+            android:drawableLeft="@drawable/ic_baseline_menu_book_24"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/year_std_hsc"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/text1_bg"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/board_std_hsc"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="gravity"
+                android:background="@drawable/text1_bg"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/hsc_score"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Percentage Scored"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/percent_studt"
+            android:drawableLeft="@drawable/percent_studt"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="20dp"
+            android:text="SSLC"
+            android:layout_gravity="start"
+            />
+
+
+        <EditText
+            android:id="@+id/student_sslcschoolname_staffdash"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="School Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_menu_book_24"
+            android:drawableLeft="@drawable/ic_baseline_menu_book_24"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/year_std_sslc"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/text1_bg"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/board_std_sslc"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="gravity"
+                android:background="@drawable/text1_bg"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+
+            android:id="@+id/sslc_score"
+            android:layout_marginTop="15dp"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="gravity"
+            android:background="@drawable/text1_bg"
+            android:hint="Percentage Scored"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/percent_studt"
+            android:drawableLeft="@drawable/percent_studt"
+            />
+        <Button
+            android:id="@+id/submit_btn_staff"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/dummy_staff"
+            android:layout_marginTop="17dp"
+            android:text="SUBMIT"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:background="@drawable/login_btn_bg"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

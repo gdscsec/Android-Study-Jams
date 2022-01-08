@@ -1,0 +1,3 @@
+package com.example.infostack
+
+class Student(var name: String, var id: String, var register_no: String, var phone: String, var email: String, var college_name: String, var department: String, var cgpa: String, var sslc_school: String, var hsc_school: String, var hsc_score: String, var sslc_score: String, var blood_group: String, var college_year: String, var semester: String, var hsc_year: String, var sslc_year: String, var hsc_board: String, var sslc_board: String, var dob: String)
